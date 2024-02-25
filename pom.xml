@@ -9,10 +9,10 @@
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.13.1</version>
-			<scope>test</scope>
+			<groupId>org.junit.jupiter</groupId>
+                        <artifactId>junit-jupiter-api</artifactId>
+                        <version>5.10.2</version>
+                        <scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -28,9 +28,9 @@
 		<plugins>
 	<!-- Maven Plugin for Tomcat -->
 	<plugin>
-		<groupId>org.codehaus.cargo</groupId>
-		<artifactId>cargo-maven2-plugin</artifactId>
-		<version>1.7.6</version>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-war-plugin</artifactId>
+		<version>3.3.1</version>
 		<configuration>
 			<container>
 				<containerId>tomcat9x</containerId>
